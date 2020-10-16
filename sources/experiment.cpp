@@ -37,12 +37,13 @@ void Experiment::direct_travel() {
   time.direct_time = buffer_passing();
   std::cout << "Direct travel time: " << time.direct_time << " ms" << std::endl;
 }
-void Experiment::reverse_travel(){
-    // подготовили наши индексы для обратного обхода
-    std::reverse(indexes.begin(), indexes.end());
-    warming_up();
-time.reverse_time = buffer_passing();
-std::cout << "Reverse travel time: " << time.reverse_time << " ms" << std::endl;
+void Experiment::reverse_travel() {
+  // подготовили наши индексы для обратного обхода
+  std::reverse(indexes.begin(), indexes.end());
+  warming_up();
+  time.reverse_time = buffer_passing();
+  std::cout << "Reverse travel time: " << time.reverse_time << " ms"
+            << std::endl;
 }
 void Experiment::random_travel() {
   std::mt19937 g(clock());
@@ -72,4 +73,5 @@ Experiment::Experiment(const size_t &kol) {
     indexes.push_back(i);
   }
 }
+
 Experiment::~Experiment() { delete[] arr; }

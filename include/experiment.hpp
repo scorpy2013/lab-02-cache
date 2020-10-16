@@ -45,4 +45,5 @@ class Experiment {
   void reverse_travel();  // обратный обход
   void random_travel();   // случайный обход
 };
+
 #endif  // INCLUDE_EXPERIMENT_HPP_
