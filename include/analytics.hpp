@@ -39,5 +39,5 @@ class Analytics {
   // результаты исследования
   std::vector<Experiment *> results;
 };
-#endif  // INCLUDE_ANALYTICS_HPP_
 
+#endif  // INCLUDE_ANALYTICS_HPP_
