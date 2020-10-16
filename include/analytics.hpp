@@ -4,6 +4,7 @@
 
 #ifndef INCLUDE_ANALYTICS_HPP_
 #define INCLUDE_ANALYTICS_HPP_
+
 #include <fstream>
 #include <vector>
 
@@ -39,3 +40,4 @@ class Analytics {
   std::vector<Experiment *> results;
 };
 #endif  // INCLUDE_ANALYTICS_HPP_
+
