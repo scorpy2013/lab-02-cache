@@ -72,6 +72,10 @@ Experiment::Experiment(const size_t &kol) {
   for (size_t i = 0; i < number_of_elements; i += 16) {
     indexes.push_back(i);
   }
+
+
 }
+
+
 
 Experiment::~Experiment() { delete[] arr; }
