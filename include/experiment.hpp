@@ -1,5 +1,5 @@
 //
-// Created by alexscorpy on 27.09.2020.
+// Copyright [2020] <scorpy2013>
 //
 
 #ifndef INCLUDE_EXPERIMENT_HPP_

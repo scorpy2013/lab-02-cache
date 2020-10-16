@@ -1,5 +1,5 @@
 //
-// Created by alexscorpy on 27.09.2020.
+// Copyright [2020] <scorpy2013>
 //
 // 1/2 * cache_sizes['1'] < 2^x < 2^(x+1) < ... < 2^(x+n) < 3/2 *
 // cache_sizes['max'] cache_size['1'] = 0,031 mb; cache_size['2'] = 0,25 mb;
