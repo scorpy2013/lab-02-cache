@@ -197,7 +197,7 @@ investigation:
 			buffer size: "4608 kB"
 		results:
 			duration: "4661 ms"
-
+-----------------------------------------------
 investigation:
 	travel_variant: Reverse
 	experiments:
@@ -261,7 +261,7 @@ investigation:
 			buffer size: "4608 kB"
 		results:
 			duration: "4663 ms"
-
+------------------------------------------------
 investigation:
 	travel_variant: Random
 	experiments:
