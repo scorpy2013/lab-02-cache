@@ -132,26 +132,200 @@ cache_size['3'] = 8 mb;
 
 ### Результаты
 
-Ниже представлен формат и пример отчета:
+Ниже представлен мой отчет:
 
 ```yaml
-investigation:                                       |  investigaion:
-  travel_variant: <вариант_прохода>                  |    travel_order: "direction"
-  experiments:                                       |    experiments:
-  - experiment:                                      |    - experiment:
-      number:                                        |        number: 1
-      input_data:                                    |        input_data:
-        buffer_size: <размер_буфера>                 |          buffer_size: "1mb"
-      results:                                       |        results:
-        duration: <продолжительность>                |          duration: "1ns"
-  - experiment:                                      |    - experiment:
-      number: <номер_эксперимента>                   |        number: 2
-      input_data:                                    |        input_data:
-        buffer_size: <размер_буфера>                 |          buffer_size: "2mb"
-      results:                                       |        results:
-        duration: <продолжительность>                |          duration: "2ns"
-                                                     |
-investigation:                                       |  investigation:
+investigation:
+	travel_variant: Direct                           
+	experiments:
+	- experiment:
+		number: 1
+		input data:
+			buffer size: "16 kB"
+		results:
+			duration: "17 ms"
+	- experiment:
+		number: 2
+		input data:
+			buffer size: "32 kB"
+		results:
+			duration: "42 ms"
+	- experiment:
+		number: 3
+		input data:
+			buffer size: "64 kB"
+		results:
+			duration: "64 ms"
+	- experiment:
+		number: 4
+		input data:
+			buffer size: "128 kB"
+		results:
+			duration: "150 ms"
+	- experiment:
+		number: 5
+		input data:
+			buffer size: "256 kB"
+		results:
+			duration: "310 ms"
+	- experiment:
+		number: 6
+		input data:
+			buffer size: "512 kB"
+		results:
+			duration: "522 ms"
+	- experiment:
+		number: 7
+		input data:
+			buffer size: "1024 kB"
+		results:
+			duration: "1201 ms"
+	- experiment:
+		number: 8
+		input data:
+			buffer size: "2048 kB"
+		results:
+			duration: "2017 ms"
+	- experiment:
+		number: 9
+		input data:
+			buffer size: "4096 kB"
+		results:
+			duration: "4140 ms"
+	- experiment:
+		number: 10
+		input data:
+			buffer size: "4608 kB"
+		results:
+			duration: "4661 ms"
+
+investigation:
+	travel_variant: Reverse
+	experiments:
+	- experiment:
+		number: 1
+		input data:
+			buffer size: "16 kB"
+		results:
+			duration: "18 ms"
+	- experiment:
+		number: 2
+		input data:
+			buffer size: "32 kB"
+		results:
+			duration: "41 ms"
+	- experiment:
+		number: 3
+		input data:
+			buffer size: "64 kB"
+		results:
+			duration: "69 ms"
+	- experiment:
+		number: 4
+		input data:
+			buffer size: "128 kB"
+		results:
+			duration: "181 ms"
+	- experiment:
+		number: 5
+		input data:
+			buffer size: "256 kB"
+		results:
+			duration: "252 ms"
+	- experiment:
+		number: 6
+		input data:
+			buffer size: "512 kB"
+		results:
+			duration: "584 ms"
+	- experiment:
+		number: 7
+		input data:
+			buffer size: "1024 kB"
+		results:
+			duration: "1016 ms"
+	- experiment:
+		number: 8
+		input data:
+			buffer size: "2048 kB"
+		results:
+			duration: "2011 ms"
+	- experiment:
+		number: 9
+		input data:
+			buffer size: "4096 kB"
+		results:
+			duration: "4179 ms"
+	- experiment:
+		number: 10
+		input data:
+			buffer size: "4608 kB"
+		results:
+			duration: "4663 ms"
+
+investigation:
+	travel_variant: Random
+	experiments:
+	- experiment:
+		number: 1
+		input data:
+			buffer size: "16 kB"
+		results:
+			duration: "18 ms"
+	- experiment:
+		number: 2
+		input data:
+			buffer size: "32 kB"
+		results:
+			duration: "33 ms"
+	- experiment:
+		number: 3
+		input data:
+			buffer size: "64 kB"
+		results:
+			duration: "72 ms"
+	- experiment:
+		number: 4
+		input data:
+			buffer size: "128 kB"
+		results:
+			duration: "215 ms"
+	- experiment:
+		number: 5
+		input data:
+			buffer size: "256 kB"
+		results:
+			duration: "259 ms"
+	- experiment:
+		number: 6
+		input data:
+			buffer size: "512 kB"
+		results:
+			duration: "610 ms"
+	- experiment:
+		number: 7
+		input data:
+			buffer size: "1024 kB"
+		results:
+			duration: "1011 ms"
+	- experiment:
+		number: 8
+		input data:
+			buffer size: "2048 kB"
+		results:
+			duration: "2010 ms"
+	- experiment:
+		number: 9
+		input data:
+			buffer size: "4096 kB"
+		results:
+			duration: "4130 ms"
+	- experiment:
+		number: 10
+		input data:
+			buffer size: "4608 kB"
+		results:
+			duration: "4678 ms"
 ...                                                  |  ...
 ```
 
