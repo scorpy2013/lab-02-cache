@@ -134,7 +134,6 @@ cache_size['3'] = 8 mb;
 
 Ниже представлен мой отчет:
 
-```yaml
 investigation:
 	travel_variant: Direct                           
 	experiments:
